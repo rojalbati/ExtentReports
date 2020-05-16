@@ -7,11 +7,18 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You should have Maven installed
+You should have Maven installed.
+https://youtu.be/K9U-5aa8VwE
+To Check whether Maven is installed or not:
+
+```
+mvn --version
+```
 
 ### Installing
 
 ```
+git clone git@github.com:rojalbati/ExtentReports.git
 cd ExtentReports
 mvn clean compile test
 ```
