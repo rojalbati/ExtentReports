@@ -22,3 +22,10 @@ git clone git@github.com:rojalbati/ExtentReports.git
 cd ExtentReports
 mvn clean compile test
 ```
+
+The Test is intentionally failed to see the Fail Status in the Extent Report
+
+### Report
+
+Your Reports will be generated in reports/index.html along with Screenshot for failed Test Case
+
