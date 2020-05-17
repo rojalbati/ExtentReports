@@ -28,7 +28,6 @@ public class Listeners extends base implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
 		WebDriver driver = null;
 		extentTest.get().fail(result.getThrowable());
 		Object testObject=result.getInstance();
@@ -50,8 +49,6 @@ public class Listeners extends base implements ITestListener {
 	}
 
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
 		extent.flush();
 	}
-
 }

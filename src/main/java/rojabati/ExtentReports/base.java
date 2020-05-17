@@ -2,6 +2,7 @@ package rojabati.ExtentReports;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -26,8 +27,12 @@ public class base {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
-		// driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(80, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+
 		driver.navigate().to(url);
+
 		return driver;
 	}
 
