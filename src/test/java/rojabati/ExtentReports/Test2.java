@@ -12,7 +12,7 @@ public class Test2 extends base {
 	@Parameters({ "browser", "url" })
 	@Test
 	public void navToBajraWork(String browser, String url) {
-		driver = intitalizeDriver(browser, url);
-		assertEquals(driver.getTitle(), "Intentionally Wrong Title To See Screenshot");
+		driver = startbrowser(browser, url);
+		assertEquals(driver.getTitle(), "Intentionally Wrong Title given inorder to see Fail Log and Screenshot in Report");
 	}
 }

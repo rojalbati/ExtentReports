@@ -10,6 +10,6 @@ public class Test3 extends base {
 	@Parameters({ "browser", "url" })
 	@Test
 	public void navToBajraCareers(String browser, String url) {
-		driver = intitalizeDriver(browser, url);
+		driver = startbrowser(browser, url);
 	}
 }
